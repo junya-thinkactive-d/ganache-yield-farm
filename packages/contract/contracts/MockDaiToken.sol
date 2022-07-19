@@ -2,7 +2,7 @@
 pragma solidity ^0.8.4;
 
 contract DaiToken {
-    string public name = 'Mock DAI token';
+    string public name = 'Mock DAI Token';
     string public symbol = 'mDAI';
     uint256 public totalSupply = 1000000000000000000000000;
     uint8 public decimals = 18;

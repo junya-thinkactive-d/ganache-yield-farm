@@ -1,0 +1,39 @@
+{
+  "name": "contract",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "ganache": "ganache-cli",
+    "generate-types": "typechain --target truffle-v5 '../client/src/libs/truffle/contracts/**/+([a-zA-Z0-9_]).json' --out-dir '../client/src/libs/truffle/types'",
+    "compile": "truffle compile && yarn generate-types",
+    "migrate": "truffle migrate",
+    "migrate-reset": "truffle migrate --reset",
+    "test": "truffle test"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@typechain/truffle-v5": "^8.0.1",
+    "@types/bn.js": "^5.1.0",
+    "@types/chai": "^4.3.1",
+    "@types/mocha": "^9.1.1",
+    "@types/web3": "^1.2.2",
+    "@typescript-eslint/eslint-plugin": "^5.30.4",
+    "@typescript-eslint/parser": "^5.30.4",
+    "chai": "^4.3.6",
+    "chai-as-promised": "^7.1.1",
+    "chai-bignumber": "^3.0.0",
+    "eslint": "^8.0.1",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-n": "^15.0.0",
+    "eslint-plugin-promise": "^6.0.0",
+    "ganache-cli": "^6.12.2",
+    "prettier": "^2.7.1",
+    "truffle": "^5.5.19",
+    "typechain": "^8.1.0",
+    "typescript": "^4.7.4",
+    "web3": "^1.7.4"
+  }
+}

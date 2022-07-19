@@ -1,0 +1,16 @@
+{
+  "name": "solidjs-solidity-starter",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": "true",
+  "scripts": {
+    "client": "yarn workspace client",
+    "contract": "yarn workspace contract"
+  },
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ]
+  }
+}
